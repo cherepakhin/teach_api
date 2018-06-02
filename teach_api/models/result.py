@@ -1,4 +1,4 @@
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from sqlalchemy import (
     Column,
     Integer,
@@ -35,6 +35,12 @@ class Result(BaseObject, AEntity):
   time_begin = Column(DateTime, default=datetime.now)
   # Время окончания ответа
   time_end = Column(DateTime, default=datetime.now)
+
+  # Продолжительность ответа
+  @property
+  def duration(self):
+    sec=self.time_end-self.time_begin
+    return str(timedelta(seconds=sec.seconds))
 
   def __repr__(self):
     return "\nn=%s\n\tquestion_n=%s\n\tanswer_n=%s\n\temployee_n=%s\n\tis_correct=%s\n\tddate=%s" % \

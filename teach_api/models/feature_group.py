@@ -5,11 +5,11 @@ from sqlalchemy import (
     ForeignKey,
     Index,
 )
+from sqlalchemy.orm import relationship, backref
+from sqlalchemy.ext.hybrid import hybrid_property
 
 from pyramid_sqlalchemy import BaseObject
 from .a_entity import AEntity
-from sqlalchemy.orm import relationship, backref
-from sqlalchemy.ext.hybrid import hybrid_property
 
 
 class FeatureGroup(BaseObject, AEntity):

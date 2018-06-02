@@ -70,7 +70,8 @@ class ReportsViewTest(BaseTestDB):
                                  },
                                  "n": 21
                              },
-                             "n": 1
+                             "n": 1,
+                             "duration": "0:00:00"
                          },
                          {
                              "employee": {
@@ -90,7 +91,8 @@ class ReportsViewTest(BaseTestDB):
                                  },
                                  "n": 22
                              },
-                             "n": 2
+                             "n": 2,
+                             "duration": "0:00:00"
                          }
                      ]
                      )

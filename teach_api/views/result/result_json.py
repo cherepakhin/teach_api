@@ -13,6 +13,7 @@ class ResultJSON(Schema):
   answer_n = fields.Integer()
   employee_n = fields.Integer()
   is_correct = fields.Boolean()
+  duration = fields.Str()
 
   class Meta:
     json_module = simplejson
@@ -37,6 +38,7 @@ class ResultEmployeeDetailJSON(Schema):
   is_correct = fields.Boolean()
   question = fields.Nested(QuestionWithFeatureJSON)
   is_correct = fields.Boolean()
+  duration = fields.Str()
 
   class Meta:
     json_module = simplejson
