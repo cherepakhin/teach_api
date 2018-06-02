@@ -1,0 +1,22 @@
+[
+  {
+    "employee_name": "EMPLOYEE_1",
+    "qty": 1,
+    "ddate": "2018-04-02"
+  },
+  {
+    "employee_name": "EMPLOYEE_1",
+    "qty": 1,
+    "ddate": "2018-04-03"
+  },
+  {
+    "employee_name": "EMPLOYEE_2",
+    "qty": 1,
+    "ddate": "2018-04-02"
+  },
+  {
+    "employee_name": "EMPLOYEE_2",
+    "qty": 1,
+    "ddate": "2018-04-03"
+  }
+]

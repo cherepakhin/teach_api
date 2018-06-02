@@ -1,0 +1,9 @@
+syntax: glob
+env
+*.sublime-workspace
+*.pyc
+*.log
+.coverage
+.cache
+htmlcov
+sqltest.sqlite

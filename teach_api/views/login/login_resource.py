@@ -1,0 +1,4 @@
+
+
+class LoginResource(dict):
+  pass

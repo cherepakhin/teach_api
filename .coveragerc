@@ -1,0 +1,3 @@
+[run]
+source = teach_api
+omit = teach_api/test*

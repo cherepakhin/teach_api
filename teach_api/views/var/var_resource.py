@@ -1,0 +1,4 @@
+
+
+class VarsResource(dict):
+  pass
