@@ -31,7 +31,6 @@ class Result(BaseObject, AEntity):
   employee = relationship('Employee')
   is_correct = Column(Boolean, default=False)
   ddate = Column(Date, default=date.today)
-  i = Column(Integer, default=1)
   # Время начала ответа
   time_begin = Column(DateTime, default=datetime.now)
   # Время окончания ответа

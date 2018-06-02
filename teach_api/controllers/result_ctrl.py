@@ -13,7 +13,7 @@ class ResultCtrl(object):
     super(ResultCtrl, self).__init__()
 
   @staticmethod
-  def exam(question_n, answer_n, employee_name):
+  def exam(question_n, answer_n, employee_name, time_begin, time_end):
     """
     Проверка ответа на вопрос и сохранение результата тестирования
     """
@@ -22,6 +22,8 @@ class ResultCtrl(object):
     result.employee_n = employee.n
     result.question_n = question_n
     result.answer_n = answer_n
+    result.time_begin=time_begin
+    result.time_end=time_end
     question = Question.get(question_n)
     result.is_correct = (question.answer_n == int(answer_n))
     Session.add(result)

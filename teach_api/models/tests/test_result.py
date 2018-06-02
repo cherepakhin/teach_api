@@ -1,5 +1,4 @@
 import pytest
-from datetime import datetime
 from pyramid_sqlalchemy import Session
 
 from teach_api.tests.base_test_db import BaseTestDB

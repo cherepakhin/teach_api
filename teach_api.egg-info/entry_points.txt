@@ -1,0 +1,6 @@
+[console_scripts]
+initialize_teach_api_db = teach_api.scripts.initializedb:main
+
+[paste.app_factory]
+main = teach_api:main
+
