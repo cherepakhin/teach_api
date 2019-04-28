@@ -1,3 +1,4 @@
+import sys
 from decimal import *
 import logging
 
@@ -73,12 +74,13 @@ def configure_route(config):
 
 def main(global_config, **settings):
   log = logging.getLogger(__name__)
-  log.warning(u'Старт')
+  log.warning(sys.version)
+  log.warning(u'Start')
   log.warning('++++++++++++++++++++++start')
   # print('++++++++++++++++++++++start')
   config = Configurator(settings=settings)
   # config.include('pyramid_chameleon')
-  config.set_authorization_policy(ACLAuthorizationPolicy())
+  #config.set_authorization_policy(ACLAuthorizationPolicy())
   # config.include('pyramid_tm')
   config.include('pyramid_sqlalchemy')
   config.include('pyramid_jwtauth')

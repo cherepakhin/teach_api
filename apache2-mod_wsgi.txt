@@ -1,20 +1,21 @@
-WSGIApplicationGroup %{GLOBAL}
-WSGIPassAuthorization On
-WSGIDaemonProcess pyramid user=chrism group=staff threads=4 \
-   python-path=/Users/chrism/modwsgi/env/lib/python2.6/site-packages
-WSGIScriptAlias /myapp /Users/chrism/modwsgi/env/pyramid.wsgi
+#WSGIApplicationGroup %{GLOBAL}
+#WSGIPassAuthorization On
+#WSGIDaemonProcess pyramid user=chrism group=staff threads=4 \
+#   python-path=/Users/chrism/modwsgi/env/lib/python2.6/site-packages
+#WSGIScriptAlias /myapp /Users/chrism/modwsgi/env/pyramid.wsgi
 
-<Directory /Users/chrism/modwsgi/env>
-  WSGIProcessGroup pyramid
-  Order allow,deny
-  Allow from all
-</Directory>
+#<Directory /Users/chrism/modwsgi/env>
+#  WSGIProcessGroup pyramid
+#  Order allow,deny
+#  Allow from all
+#</Directory>
 
-WSGIApplicationGroup %{GLOBAL}
-WSGIPassAuthorization On
 #WSGIDaemonProcess pyramid user=vasi group=vasi threads=4 python-path=/home/vasi/prog/py/myproject/env/lib/python3.5/site-packages
-WSGIDaemonProcess pyramid user=vasi group=vasi threads=4 python-path=/home/vasi/prog/py/teach_api/env/lib/python3.5/site-packages
 #WSGIScriptAlias / /home/vasi/prog/py/myproject/pyramid.wsgi
+
+WSGIApplicationGroup %{GLOBAL}
+WSGIPassAuthorization On
+WSGIDaemonProcess pyramid user=vasi group=vasi threads=4 python-path=/home/vasi/prog/py/teach_api/env/lib/python3.5/site-packages
 WSGIScriptAlias / /home/vasi/prog/py/teach_api/pyramid.wsgi
 
 <Directory /home/vasi/prog/py/teach_api>
