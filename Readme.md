@@ -2,7 +2,12 @@
 
 ## Настройка окружения
 
-Создание виртуального окружения для python3.6
+Должны быть установлены Python3, mod_wsgi_py3
+```bash
+sudo apt-get install libapache2-mod-wsgi-py3
+```
+
+Создание виртуального окружения для python3
 ```bash
 python3 -m venv env
 ```
@@ -25,8 +30,9 @@ $ py.test -q
 ```bash
 $ pserve development.ini --reload
 ```
+Для настройки apache см. файл 000-default.conf
 
-[Демо-версия](http://v.el59.ru/teach)
+[Демо-версия](http://v.perm.ru/teach)
 ```
 Имя: Черепахин
 Пароль: 2222
